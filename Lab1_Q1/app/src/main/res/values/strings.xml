@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Lab1_Q1</string>
+    <string name="Previous">Button</string>
+    <string name="image1">image1</string>
+    <string name="next">Next</string>
+    <string name="random">Random</string>
+    <string name="count">1 of 4</string>
+    <string name="previous">Previous</string>
+</resources>

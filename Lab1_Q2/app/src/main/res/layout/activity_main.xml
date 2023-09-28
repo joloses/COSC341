@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Spinner
+        android:id="@+id/appleSpinner"
+        android:layout_width="85dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintStart_toEndOf="@+id/applePrice"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/banSpinner"
+        android:layout_width="85dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintStart_toEndOf="@+id/bananaPrice"
+        app:layout_constraintTop_toBottomOf="@+id/appleSpinner"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/pearSpinner"
+        android:layout_width="85dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toEndOf="@+id/pearPrice"
+        app:layout_constraintTop_toBottomOf="@+id/banSpinner"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Spinner
+        android:id="@+id/orangeSpinner"
+        android:layout_width="85dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        app:layout_constraintStart_toEndOf="@+id/orangePrice"
+        app:layout_constraintTop_toBottomOf="@+id/pearSpinner"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/apple"
+        android:layout_width="76dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/apple"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/applePrice"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Apple" />
+
+    <TextView
+        android:id="@+id/banana"
+        android:layout_width="76dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/banana"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/bananaPrice"
+        app:layout_constraintTop_toBottomOf="@+id/apple"
+        tools:text="Banana" />
+
+    <TextView
+        android:id="@+id/pear"
+        android:layout_width="76dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/pear"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/pearPrice"
+        app:layout_constraintTop_toBottomOf="@+id/banana"
+        tools:text="Pear" />
+
+    <TextView
+        android:id="@+id/orange"
+        android:layout_width="76dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="24dp"
+        android:text="@string/orange"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toStartOf="@+id/orangePrice"
+        app:layout_constraintTop_toBottomOf="@+id/pear"
+        tools:text="Orange" />
+
+    <Button
+        android:id="@+id/confirmButton"
+        android:layout_width="406dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="2dp"
+        android:layout_marginEnd="3dp"
+        android:layout_marginBottom="44dp"
+        android:background="#CF1E1E"
+        android:text="@string/confirm"
+        app:layout_constraintBottom_toTopOf="@+id/price"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="CONFIRM"
+        android:onClick="confirmBtn"/>
+
+    <TextView
+        android:id="@+id/price"
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="134dp"
+        android:layout_marginEnd="147dp"
+        android:layout_marginBottom="326dp"
+        android:text="@string/price"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="Price: " />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/lbs"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/appleSpinner"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Lbs" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="16dp"
+        android:text="@string/lbs2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/banSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/textView6"
+        tools:text="Lbs" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/lbs3"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/pearSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/textView7"
+        tools:text="Lbs" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/lbs4"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/orangeSpinner"
+        app:layout_constraintTop_toBottomOf="@+id/textView8"
+        tools:text="Lbs" />
+
+    <TextView
+        android:id="@+id/applePrice"
+        android:layout_width="76dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="40dp"
+        android:text="@string/applePrice"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/apple"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="$2.00/lb" />
+
+    <TextView
+        android:id="@+id/bananaPrice"
+        android:layout_width="76dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/BanPrice"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/banana"
+        app:layout_constraintTop_toBottomOf="@+id/applePrice"
+        tools:text="$2.50/lb" />
+
+    <TextView
+        android:id="@+id/pearPrice"
+        android:layout_width="76dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/PearPrice"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/pear"
+        app:layout_constraintTop_toBottomOf="@+id/bananaPrice"
+        tools:text="$1.80/lb" />
+
+    <TextView
+        android:id="@+id/orangePrice"
+        android:layout_width="76dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/OraPrice"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/orange"
+        app:layout_constraintTop_toBottomOf="@+id/pearPrice"
+        tools:text="$2.25/lb" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Lab4</string>
+    <string name="write_data">Write Data</string>
+    <string name="read_data">Read Data</string>
+    <string name="textview">TextView</string>
+    <string name="name">Name</string>
+    <string name="LastName">Name</string>
+    <string name="text2">TextView</string>
+    <string name="maleBtn">RadioButton</string>
+</resources>

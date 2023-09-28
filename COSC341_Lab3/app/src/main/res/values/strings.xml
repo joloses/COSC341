@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">COSC341_Lab3</string>
+    <string name="provincial_capital_quiz">Provincial Capital Quiz</string>
+    <string name="number_of_questions">Number of Questions</string>
+    <string name="load_quiz">Load Quiz</string>
+</resources>

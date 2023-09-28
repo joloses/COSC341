@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Lab1_Q2</string>
+    <string name="apple">Apple</string>
+    <string name="pear">Pear</string>
+    <string name="confirm">Confirm</string>
+    <string name="orange">Orange</string>
+    <string name="banana">Banana</string>
+    <string name="lbs">Lbs</string>
+    <string name="lbs2">Lbs</string>
+    <string name="lbs3">Lbs</string>
+    <string name="lbs4">Lbs</string>
+    <string name="price">Price: </string>
+    <string name="applePrice">$2.00/lb</string>
+    <string name="BanPrice">$2.50/lb</string>
+    <string name="PearPrice">$2.25/lb</string>
+    <string name="OraPrice">$1.80/lb</string>
+
+    <string-array name = "choices">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>5</item>
+        <item>10</item>
+        <item>20</item>
+    </string-array>
+
+</resources>
